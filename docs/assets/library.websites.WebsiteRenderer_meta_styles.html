@@ -1,0 +1,62 @@
+skit.define("library.websites.WebsiteRenderer:meta_styles.html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    "
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.customCss : stack1), depth0)) != null ? stack1 : "")
+    + "\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    #public-landing-page .container {\n      font-family: '"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.font : stack1), depth0))
+    + "', sans-serif !important;\n    }\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "    #public-landing-page.template-1 .hero,\n    #public-landing-page.template-2 .hero,\n    #public-landing-page.template-3 .hero,\n    #public-landing-page.template-4 .hero,\n    #public-landing-page.template-7 .hero,\n    #public-landing-page.template-8 .hero .graphic,\n    #public-landing-page.template-9 .bg-color,\n    #public-landing-page .store-badge-white-text,\n    #public-landing-page.template-1color .hero,\n    #public-landing-page.template-2color .hero {\n      background: "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1), depth0))
+    + ";\n    }\n    #public-landing-page.template-5 .hero h2,\n    #public-landing-page.template-6 .hero h1,\n    #public-landing-page.template-8 .hero,\n    #public-landing-page.template-9 .hero h2,\n    #public-landing-page .hero .btn,\n    #public-landing-page .navbar .btn,\n    #public-landing-page .navbar.invert-navbar a,\n    #public-landing-page footer a,\n    #public-landing-page .benefit-header {\n      color: "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1), depth0))
+    + ";\n    }\n    #public-landing-page .btn.btn-primary.btn-primary-invert,\n    #public-landing-page .navbar.invert-navbar .btn.btn-primary,\n    #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,\n    #public-landing-page .navbar .navbar-toggle .icon-bar,\n    #public-landing-page .download-text {\n      color: white;\n      background-color: "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1), depth0))
+    + ";\n    }\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    #public-landing-page.template-1 .hero,\n    #public-landing-page.template-2 .hero,\n    #public-landing-page.template-4 .hero {\n      background-image: url('"
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.background : stack1)) != null ? stack1.url : stack1), depth0))
+    + "=s1600');\n      background-repeat: no-repeat;\n      background-position: center center;\n      background-size: cover;\n    }\n    #public-landing-page .hero .blurred-cover .darken {\n      position: absolute;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      z-index: 2px;\n      background: rgba(0,0,0,.3);\n    }\n";
+},"9":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    #public-landing-page.template-1 .hero,\n    #public-landing-page.template-2 .hero,\n    #public-landing-page.template-4 .hero {\n      overflow: hidden;\n    }\n    #public-landing-page .hero .blurred-cover {\n      position: absolute;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      z-index: 1px;\n      background-image: url('"
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1)) != null ? stack1["0"] : stack1)) != null ? stack1.url : stack1), depth0))
+    + "');\n      background-repeat: no-repeat;\n      background-position: center center;\n      background-size: cover;\n      -webkit-filter: blur(50px);\n      -moz-filter: blur(50px);\n      -o-filter: blur(50px);\n      -ms-filter: blur(50px);\n      filter: blur(50px);\n      margin: -60% -40% -40%;\n    }\n    #public-landing-page .hero .blurred-cover .darken {\n      position: absolute;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      z-index: 2px;\n      background: rgba(0,0,0,.3);\n    }\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      #public-landing-page.template-9 .hero h1 {\n        background: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1), depth0))
+    + ";\n      }\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<style type=\"text/css\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.customCss : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.font : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.background : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(9, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n  @media screen and (max-width: 767px) {\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.primaryColor : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  }\n\n</style>\n";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

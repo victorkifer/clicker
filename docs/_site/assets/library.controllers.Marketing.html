@@ -1,0 +1,46 @@
+skit.define("library.controllers.Marketing:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "home";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "                  <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                      <a class=\"btn btn-sm btn-primary\" href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.path : stack1), depth0))
+    + "/dashboard/\">Dashboard</a>\n                    </li>\n                  </ul>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "                  <ul class=\"nav navbar-nav navbar-right\">\n                    <li>\n                      <a class=\"btn btn-sm btn-link\" href=\"/signup/?redirect="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.path : stack1), depth0))
+    + "\">Sign Up</a>\n                    </li>\n                    <li>\n                      <a class=\"btn btn-sm btn-primary\" href=\"/login/?redirect="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.path : stack1), depth0))
+    + "/dashboard/\">Log In</a>\n                    </li>\n                  </ul>\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "            <li><p><a href=\""
+    + alias4(((helper = (helper = helpers.path || (depth0 != null ? depth0.path : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"path","hash":{},"data":data}) : helper)))
+    + "/\">"
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</a></p></li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
+
+  return "<div class=\"marketing "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.homepage : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n  <div class=\"top\">\n\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-lg-12\">\n\n          <nav class=\"navbar navbar-default\">\n            <div class=\"container-fluid\">\n              <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#nav-options\" aria-expanded=\"false\">\n                  <span class=\"sr-only\">Toggle navigation</span>\n                  <span class=\"icon-bar\"></span>\n                  <span class=\"icon-bar\"></span>\n                  <span class=\"icon-bar\"></span>\n                </button>\n                <a class=\"navbar-brand\" href=\"/\">\n                  <img src=\"/__static__/images/icon.png\">\n                </a>\n              </div>\n\n              <div class=\"collapse navbar-collapse\" id=\"nav-options\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.user : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
+    + "              </div>\n\n            </div>\n          </nav>\n        </div>\n      </div>\n    </div>\n\n   "
+    + ((stack1 = ((helper = (helper = helpers.billboard || (depth0 != null ? depth0.billboard : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"billboard","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\n\n  </div>\n\n  "
+    + ((stack1 = ((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"body","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\n\n  <footer class=\"footer\">\n    <div class=\"row\">\n      <div class=\"col-sm-3 col-xs-6\">\n        <div class=\"footer-header\">Products</div>\n        <ul class=\"list-unstyled products\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.publicProducts : depth0),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "        </ul>\n      </div>\n      <div class=\"col-sm-3 col-xs-12 text-right\">\n        <div class=\"footer-header\">\n          <a href=\"/privacy/\">Privacy</a> &middot; <a href=\"/terms/\">Terms</a> &middot; <a href=\"/sdk/terms/\">SDK Terms</a>\n        </div>\n      </div>\n    </div>\n  </footer>\n</div>";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

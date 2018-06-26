@@ -1,0 +1,27 @@
+skit.define("library.overlays.AmbiguousProgressOverlay:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "    <h3>"
+    + container.escapeExpression(((helper = (helper = helpers.subtext || (depth0 != null ? depth0.subtext : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"subtext","hash":{},"data":data}) : helper)))
+    + "</h3>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "    <p>"
+    + container.escapeExpression(((helper = (helper = helpers.subsubtext || (depth0 != null ? depth0.subsubtext : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"subsubtext","hash":{},"data":data}) : helper)))
+    + "</p>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div class=\"progress-overlay\">\n  <i class=\"fa fa-circle-o-notch fa-spin\"></i>\n  <span class=\"progress-bar\"><span class=\"progress-bar-fill\"></span></span>\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.subtext : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.subsubtext : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

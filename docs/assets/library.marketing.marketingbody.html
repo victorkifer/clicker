@@ -1,0 +1,81 @@
+skit.define("library.marketing.marketingbody:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "  <div class=\"section description\">\n    <div class=\"row\">\n      <div class=\"col-sm-8 col-sm-offset-2 col-xs-12\">\n        <img src=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.iconPath : stack1), depth0))
+    + "\">\n        "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.description : stack1), depth0))
+    + "\n      </div>\n    </div>\n  </div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "  <div class=\"section feature feature-"
+    + alias4(((helper = (helper = helpers.index || (data && data.index)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"index","hash":{},"data":data}) : helper)))
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.noFlex : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.extraPadding : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n    <div class=\"row\">\n      <div class=\"col-sm-"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.imgColSize : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.program(10, data, 0),"data":data})) != null ? stack1 : "")
+    + " col-xs-12"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.imgRight : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.bottomAlign : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + " feature-image\">\n        <img src=\""
+    + alias4(((helper = (helper = helpers.imagePath || (depth0 != null ? depth0.imagePath : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imagePath","hash":{},"data":data}) : helper)))
+    + "\" "
+    + ((stack1 = helpers.unless.call(alias1,(depth0 != null ? depth0.imgRight : depth0),{"name":"unless","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + " "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.imgConstrained : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n      </div>\n      <div class=\"col-sm-"
+    + alias4((helpers.otherCol || (depth0 && depth0.otherCol) || alias2).call(alias1,(depth0 != null ? depth0.imgColSize : depth0),{"name":"otherCol","hash":{},"data":data}))
+    + " col-xs-12\">\n        "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.preHeader : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n        <h2>"
+    + alias4(((helper = (helper = helpers.header || (depth0 != null ? depth0.header : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"header","hash":{},"data":data}) : helper)))
+    + "</h2>\n        <h3>"
+    + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"text","hash":{},"data":data}) : helper)))
+    + "</h3>\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.learnMoreUrl : depth0),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "      </div>\n    </div>\n  </div>\n";
+},"4":function(container,depth0,helpers,partials,data) {
+    return " section-noflex";
+},"6":function(container,depth0,helpers,partials,data) {
+    return " feature-extra-padding";
+},"8":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return container.escapeExpression(((helper = (helper = helpers.imgColSize || (depth0 != null ? depth0.imgColSize : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"imgColSize","hash":{},"data":data}) : helper)));
+},"10":function(container,depth0,helpers,partials,data) {
+    return "7";
+},"12":function(container,depth0,helpers,partials,data) {
+    return " pull-right";
+},"14":function(container,depth0,helpers,partials,data) {
+    return " bottom-align";
+},"16":function(container,depth0,helpers,partials,data) {
+    return "class=\"pull-right\"";
+},"18":function(container,depth0,helpers,partials,data) {
+    return "style=\"width: 100%;\"";
+},"20":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<p class=\"pre-header\">"
+    + container.escapeExpression(((helper = (helper = helpers.preHeader || (depth0 != null ? depth0.preHeader : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"preHeader","hash":{},"data":data}) : helper)))
+    + "</p>";
+},"22":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "          <a href=\""
+    + container.escapeExpression(((helper = (helper = helpers.learnMoreUrl || (depth0 != null ? depth0.learnMoreUrl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"learnMoreUrl","hash":{},"data":data}) : helper)))
+    + "\" target=\"_blank\" class=\"btn btn-xs btn-transparent\">Learn More</a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.description : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.features : stack1),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

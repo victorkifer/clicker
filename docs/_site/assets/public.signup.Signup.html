@@ -1,0 +1,14 @@
+skit.define("public.signup.Signup:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "\n<div id=\"content-header\" class=\"row\">\n  <div class=\"col-md-12\">\n    <h1>Register</h1>\n    <p><small>Already have an account? <a href=\""
+    + container.escapeExpression(((helper = (helper = helpers.loginUrl || (depth0 != null ? depth0.loginUrl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"loginUrl","hash":{},"data":data}) : helper)))
+    + "\">Login here.</a></small></p>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <form class=\"form\">\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-user\"></i></span>\n          <input class=\"form-control\" name=\"name\" placeholder=\"First and Last Name\"\n                 required type=\"text\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-envelope\"></i></span>\n          <input class=\"form-control\" name=\"email\" placeholder=\"Email\"\n                 required type=\"email\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-lock\"></i></span>\n          <input class=\"form-control\" name=\"password\" placeholder=\"Password\"\n                 required=\"required\" type=\"password\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-lock\"></i></span>\n          <input class=\"form-control\" name=\"password_confirm\" placeholder=\"Confirm Password\"\n                 required type=\"password\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <button type=\"submit\" class=\"btn btn-primary btn-block\">Register</button>\n      </div>\n      <div class=\"form-group text-center\">\n        <small>\n          By continuing, you agree to our\n          <a href=\"/terms/\">Terms of Use</a>\n          and <a href=\"/privacy/\">Privacy Policy</a>.\n        </small>\n      </div>\n    </form>\n  </div>\n</div>\n";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

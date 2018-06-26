@@ -1,0 +1,40 @@
+skit.define("library.websites.WebsiteRenderer:html", ["skit.thirdparty.handlebars:runtime","library.websites.WebsiteRenderer:header.html","library.websites.WebsiteRenderer:gallery.html","library.websites.WebsiteRenderer:description.html","library.websites.WebsiteRenderer:footer.html"], function() {  return ((function(Handlebars,__module___header_html,__module___gallery_html,__module___description_html,__module___footer_html) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "full-screen";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "centered";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    "
+    + ((stack1 = container.invokePartial(partials.__module___gallery_html,depth0,{"name":"__module___gallery_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    "
+    + ((stack1 = container.invokePartial(partials.__module___description_html,depth0,{"name":"__module___description_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div id=\"public-landing-page\"\n  class=\"\n    template-"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1), depth0))
+    + "\n    "
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.fullScreen : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n    "
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.centered : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n  \">\n\n  "
+    + ((stack1 = container.invokePartial(partials.__module___header_html,depth0,{"name":"__module___header_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.sections : stack1)) != null ? stack1.gallery : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.sections : stack1)) != null ? stack1.description : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n  "
+    + ((stack1 = container.invokePartial(partials.__module___footer_html,depth0,{"name":"__module___footer_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "\n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script>\n";
+},"usePartial":true,"useData":true}, Handlebars);
+  var partials = {"__module___header_html": __module___header_html,"__module___gallery_html": __module___gallery_html,"__module___description_html": __module___description_html,"__module___footer_html": __module___footer_html};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

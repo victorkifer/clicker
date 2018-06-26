@@ -1,0 +1,109 @@
+skit.define("library.websites.WebsiteRenderer:footer.html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "          <a href=\""
+    + container.escapeExpression((helpers.subpathUrl || (depth0 && depth0.subpathUrl) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.website : depth0),"support/",{"name":"subpathUrl","hash":{},"data":data}))
+    + "\">Support</a>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.supportLink : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"4":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.supportLink : stack1), depth0))
+    + "\" target=\"_blank\">Support</a>\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "          <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.blogLink : stack1), depth0))
+    + "\" target=\"_blank\">Blog</a>\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "          <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.pressLink : stack1), depth0))
+    + "\" target=\"_blank\">Press</a>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "          <a href=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.customLink : stack1), depth0))
+    + "\" target=\"_blank\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.customLinkLabel : stack1), depth0))
+    + "</a>\n";
+},"12":function(container,depth0,helpers,partials,data) {
+    return "          <a href=\""
+    + container.escapeExpression((helpers.subpathUrl || (depth0 && depth0.subpathUrl) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.website : depth0),"terms/",{"name":"subpathUrl","hash":{},"data":data}))
+    + "\">Terms</a>\n";
+},"14":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.termsLink : stack1),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"15":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.termsLink : stack1), depth0))
+    + "\" target=\"_blank\">Terms</a>\n";
+},"17":function(container,depth0,helpers,partials,data) {
+    return "          <a href=\""
+    + container.escapeExpression((helpers.subpathUrl || (depth0 && depth0.subpathUrl) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.website : depth0),"privacy/",{"name":"subpathUrl","hash":{},"data":data}))
+    + "\">Privacy Policy</a>\n";
+},"19":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.privacyLink : stack1),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"20":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.privacyLink : stack1), depth0))
+    + "\" target=\"_blank\">Privacy Policy</a>\n";
+},"22":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "          <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.twitterLink : stack1), depth0))
+    + "\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a>\n";
+},"24":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "          <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.facebookLink : stack1), depth0))
+    + "\" target=\"_blank\"><i class=\"fa fa-facebook-square\"></i></a>\n";
+},"26":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "          <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.instagramLink : stack1), depth0))
+    + "\" target=\"_blank\"><i class=\"fa fa-instagram\"></i></a>\n";
+},"28":function(container,depth0,helpers,partials,data) {
+    return "          <a href=\"https://mixpanel.com/f/partner\" rel=\"nofollow\"><img src=\"//cdn.mxpnl.com/site_media/images/partner/badge_light.png\" alt=\"Mobile Analytics\" /></a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "  <footer>\n    <div class=\"container\">\n      <div class=\"footer-nav col-xs-12 col-sm-8 pull-right text-right\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.support : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.blogLink : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.pressLink : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.customLink : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.terms : stack1),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.program(14, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.privacy : stack1),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.program(19, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.twitterLink : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.facebookLink : stack1),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.instagramLink : stack1),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.mixpanelBadge : stack1),{"name":"if","hash":{},"fn":container.program(28, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "      </div>\n\n    </div>\n  </footer>\n";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

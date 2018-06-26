@@ -1,0 +1,44 @@
+skit.define("public.dashboard.DashboardLauncher:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "          <li class=\"col-sm-4\">\n            <div class=\"white-container\">\n              <div class=\"dashboard-panel-product-info\">\n                <img src=\""
+    + alias4(((helper = (helper = helpers.iconPath || (depth0 != null ? depth0.iconPath : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"iconPath","hash":{},"data":data}) : helper)))
+    + "\">\n                <h3>"
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</h3>\n                <p><strong>"
+    + alias4(((helper = (helper = helpers.tagline || (depth0 != null ? depth0.tagline : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tagline","hash":{},"data":data}) : helper)))
+    + "</strong></p>\n                <p>"
+    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
+    + "</p>\n              </div>\n                <div class=\"button-footer\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.uses : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
+    + "              </div>\n            </div>\n          </li>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "                  <a href=\""
+    + alias4(((helper = (helper = helpers.path || (depth0 != null ? depth0.path : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"path","hash":{},"data":data}) : helper)))
+    + "/dashboard/\" class=\"btn btn-sm btn-block btn-primary\">Launch "
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</a>\n";
+},"4":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "                  <a href=\""
+    + alias4(((helper = (helper = helpers.path || (depth0 != null ? depth0.path : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"path","hash":{},"data":data}) : helper)))
+    + "/onboard/\" class=\"btn btn-sm btn-primary\">Get Started</a>\n                  <a href=\""
+    + alias4(((helper = (helper = helpers.path || (depth0 != null ? depth0.path : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"path","hash":{},"data":data}) : helper)))
+    + "\" class=\"btn btn-sm btn-link\">Learn More</a>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "\n<div id=\"content-header\" class=\"row narrow-header\">\n  <div class=\"col-md-12\">\n    <h1>Welcome!</h1>\n    <p>Which product would you like to use?</p>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <ul class=\"list-unstyled dashboard-panels\">\n      <div class=\"row\">\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.publicProducts : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "      </div>\n    </ul>\n  </div>\n</div>";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

@@ -1,0 +1,10 @@
+skit.define("public.Home:meta.html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<meta name=\"description\" content=\"Easily build iOS screenshots, app landing pages, monitor your app reviews, receive daily sales reports, and identify your super users.\">\n<meta name=\"keywords\" content=\"mobile app toolkit,mobile app tools, mobile developers,review monitor,iOS screenshot builder, app store sales reporter, app website builder\">\n<meta name=\"author\" content=\"\">";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

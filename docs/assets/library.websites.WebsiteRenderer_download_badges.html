@@ -1,0 +1,40 @@
+skit.define("library.websites.WebsiteRenderer:download_badges.html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "  <a href=\""
+    + container.escapeExpression((helpers.storeLink || (depth0 && depth0.storeLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.website : depth0),"ios",{"name":"storeLink","hash":{},"data":data}))
+    + "\" class=\"app-store-badge\" target=\"_blank\">\n    <img src=\"/__static__/images/websites/public/app-store-black-on-color@2x.png\">\n  </a>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "  <a href=\""
+    + container.escapeExpression((helpers.storeLink || (depth0 && depth0.storeLink) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.website : depth0),"android",{"name":"storeLink","hash":{},"data":data}))
+    + "\" class=\"google-play-badge\" target=\"_blank\">\n    <img src=\"/__static__/images/websites/public/google-play-black-on-color@2x.png\">\n  </a>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "  <a href=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.waitingListLink : stack1), depth0))
+    + "\" class=\"btn btn-primary\" target=\"_blank\">\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.waitingListLabel : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "  </a>\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.waitingListLabel : stack1), depth0))
+    + "\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "      Join Waiting List\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+
+  return ((stack1 = (helpers.ifShowPlatform || (depth0 && depth0.ifShowPlatform) || alias2).call(alias1,(depth0 != null ? depth0.website : depth0),"ios",{"name":"ifShowPlatform","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifShowPlatform || (depth0 && depth0.ifShowPlatform) || alias2).call(alias1,(depth0 != null ? depth0.website : depth0),"android",{"name":"ifShowPlatform","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifShowWaitingList || (depth0 && depth0.ifShowWaitingList) || alias2).call(alias1,(depth0 != null ? depth0.website : depth0),{"name":"ifShowWaitingList","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

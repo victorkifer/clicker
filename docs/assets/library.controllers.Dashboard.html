@@ -1,0 +1,64 @@
+skit.define("library.controllers.Dashboard:html", ["skit.thirdparty.handlebars:runtime","library.products.list:js"], function() {  return ((function(Handlebars,library_products_list) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "full-width-content";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "dashboard/";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "disabled";
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "                <img src=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.currentProduct : depth0)) != null ? stack1.iconPath : stack1), depth0))
+    + "\">\n                "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.currentProduct : depth0)) != null ? stack1.name : stack1), depth0))
+    + "\n";
+},"9":function(container,depth0,helpers,partials,data) {
+    return "                Products\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    return "<span class=\"caret\"></span>";
+},"13":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <li class=\"dropdown\">\n              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"> "
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.user : depth0)) != null ? stack1.names : stack1)) != null ? stack1.first : stack1), depth0))
+    + " <span class=\"caret\"></span></a>\n              <ul class=\"dropdown-menu\">\n                <li"
+    + ((stack1 = (helpers.ifPathStartsWith || (depth0 && depth0.ifPathStartsWith) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"/account",{"name":"ifPathStartsWith","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n                  <a href=\"/account/dashboard/\">\n                    <i class=\"fa fa-user\"></i>\n                    <span>\n                      Account Settings\n                    </span>\n                  </a>\n                </li>\n                <li>\n                  <a href=\"/logout/\">\n                    <i class=\"fa fa-sign-out\"></i> <span>Log out</span>\n                  </a>\n                </li>\n              </ul>\n            </li>\n";
+},"14":function(container,depth0,helpers,partials,data) {
+    return " class=\"active\" ";
+},"16":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "      <aside>\n        "
+    + ((stack1 = ((helper = (helper = helpers.sidebar || (depth0 != null ? depth0.sidebar : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"sidebar","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "\n      </aside>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div class=\"webapp-wrapper webapp dashboard "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.fullWidthContent : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n\n  <nav>\n\n    <div class=\"container\">\n      <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n        </button>\n        <a class=\"navbar-brand\" href=\"/"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.user : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n          <img src=\"/__static__/images/icon.png\" alt=\"Logo\">\n        </a>\n      </div>\n\n      <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n        <ul class=\"nav navbar-nav\">\n          <li class=\"dropdown product-list\">\n            <a href=\"#\" class=\"dropdown-toggle "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isOnboarding : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.currentProduct : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(9, data, 0),"data":data})) != null ? stack1 : "")
+    + "               "
+    + ((stack1 = helpers.unless.call(alias1,(depth0 != null ? depth0.isOnboarding : depth0),{"name":"unless","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n            </a>\n            <ul class=\"dropdown-menu\">\n              "
+    + ((stack1 = container.invokePartial(partials.library_products_list,depth0,{"name":"library_products_list","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "            </ul>\n          </li>\n        </ul>\n\n        <ul class=\"nav navbar-nav navbar-right\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.user : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "        </ul>\n      </div>\n    </div>\n  </nav>\n\n\n  <main>\n    <div class=\"content container\" id=\"dashboard-container\">"
+    + ((stack1 = ((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"content","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + "</div>\n\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.sidebar : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n  </main>\n\n</div>\n";
+},"usePartial":true,"useData":true}, Handlebars);
+  var partials = {"library_products_list": library_products_list};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

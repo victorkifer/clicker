@@ -1,0 +1,47 @@
+skit.define("library.websites.WebsiteRenderer:page.html", ["skit.thirdparty.handlebars:runtime","library.websites.WebsiteRenderer:nav.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:footer.html"], function() {  return ((function(Handlebars,__module___nav_html,__module___app_logo_html,__module___download_badges_html,__module___footer_html) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "style=\"padding:0;\"";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "    <section class=\"hero\">\n      <div class=\"container\">\n        "
+    + ((stack1 = container.invokePartial(partials.__module___nav_html,depth0,{"name":"__module___nav_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "\n        <div class=\"row\">\n          <div class=\"col-sm-5 col-xs-12 text-center\">\n            <img src=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\">\n          </div>\n          <div class=\"col-sm-7 col-xs-12\">\n            <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n            <h2>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n            "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "          </div>\n        </div>\n      </div>\n    </section>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "style=\"padding:0; border: none\"";
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "    "
+    + ((stack1 = container.invokePartial(partials.__module___footer_html,depth0,{"name":"__module___footer_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div id=\"public-landing-page\"\n  class=\"template-2\"\n  "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.contentOnly : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n\n"
+    + ((stack1 = helpers.unless.call(alias1,(depth0 != null ? depth0.contentOnly : depth0),{"name":"unless","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n  <section class=\"description\" "
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.contentOnly : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-xs-12\">\n          <h1>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.page : depth0)) != null ? stack1.title : stack1), depth0))
+    + "</h1>\n          <p id=\"content\">"
+    + ((stack1 = (helpers.markdown || (depth0 && depth0.markdown) || helpers.helperMissing).call(alias1,((stack1 = (depth0 != null ? depth0.page : depth0)) != null ? stack1.body : stack1),{"name":"markdown","hash":{},"data":data})) != null ? stack1 : "")
+    + "</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n"
+    + ((stack1 = helpers.unless.call(alias1,(depth0 != null ? depth0.contentOnly : depth0),{"name":"unless","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n</div>\n\n<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script>\n";
+},"usePartial":true,"useData":true}, Handlebars);
+  var partials = {"__module___nav_html": __module___nav_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___footer_html": __module___footer_html};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

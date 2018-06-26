@@ -1,0 +1,54 @@
+skit.define("public.websites.dashboard.__id__.edit.WebsiteEdit:html", ["skit.thirdparty.handlebars:runtime","public.websites.dashboard.__id__.edit.WebsiteEdit:app_info.html","public.websites.dashboard.__id__.edit.WebsiteEdit:styles.html","public.websites.dashboard.__id__.edit.WebsiteEdit:legal.html","public.websites.dashboard.__id__.edit.WebsiteEdit:support.html"], function() {  return ((function(Handlebars,__module___app_info_html,__module___styles_html,__module___legal_html,__module___support_html) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "              <img src=\""
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" height=\"50\" class=\"img-rounded\">\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "            <li>\n              <a href=\"/websites/dashboard/"
+    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "/\" title=\""
+    + alias4(((helper = (helper = helpers.appName || (depth0 != null ? depth0.appName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"appName","hash":{},"data":data}) : helper)))
+    + "\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.images : depth0)) != null ? stack1.icon : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "                <span>"
+    + alias4(((helper = (helper = helpers.appName || (depth0 != null ? depth0.appName : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"appName","hash":{},"data":data}) : helper)))
+    + "</span>\n              </a>\n            </li>\n";
+},"4":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "                  <img src=\""
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.images : depth0)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" height=\"40\" class=\"img-rounded\">\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<form id=\"app-website-edit-form\" class=\"form\">\n\n  <div id=\"content-header\" class=\"row\">\n    <div class=\"col-md-12\">\n      <a href=\"/websites/dashboard/\" class=\"extended-back-link\"><i class=\"fa fa-chevron-left\"></i>Back to Website List</a>\n    </div>\n    <div class=\"col-sm-12\">\n      <button class=\"btn btn-sm btn-primary\" type=\"submit\"><i class=\"fa fa-check\"></i> <span>Save</span></button>\n      <a class=\"btn btn-sm btn-default\" href=\"/websites/"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.id : stack1), depth0))
+    + "/\" target=\"_blank\"><span>Preview</span></a>\n      <a id=\"maybe-delete\" class=\"btn btn-sm btn-default btn-default-warning\"><i class=\"fa fa-trash-o\"></i> <span>Delete</span></a>\n\n      <div class=\"dropdown\" id=\"page-switcher\">\n        <button class=\"btn btn-link dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n          <h1>\n"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "            Edit Website\n            <span class=\"caret\"></span>\n          </h1>\n        </button>\n        <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n"
+    + ((stack1 = helpers.each.call(alias3,(depth0 != null ? depth0.websites : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "          <li class=\"app add\">\n            <a href=\"/websites/onboard/\">\n              <span class=\"glyphicon glyphicon-plus-sign\"></span><span>Build New Website</span>\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n\n  <div id=\"filters\" class=\"row\">\n    <div class=\"col-xs-12\">\n      <ul class=\"nav nav-tabs\" role=\"tablist\">\n        <li role=\"presentation\" class=\"active\">\n          <a href=\"#landing-page\" aria-controls=\"all\" role=\"tab\" data-toggle=\"tab\">App Info</a>\n        </li>\n        <li role=\"presentation\">\n          <a href=\"#screenshots\" aria-controls=\"current\" role=\"tab\" data-toggle=\"tab\">Styles &amp; Images</a>\n        </li>\n        <li role=\"presentation\">\n          <a href=\"#legal\" aria-controls=\"current\" role=\"tab\" data-toggle=\"tab\">Terms &amp; Privacy</a>\n        </li>\n        <li role=\"presentation\">\n          <a href=\"#support\" aria-controls=\"best\" role=\"tab\" data-toggle=\"tab\">Support &amp; FAQ</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n\n  <input type=\"hidden\" name=\"id\" class=\"form-control\" value=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.id : stack1), depth0))
+    + "\">\n  <input type=\"hidden\" name=\"template\" class=\"form-control\" value=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.template : stack1), depth0))
+    + "\">\n\n  <div class=\"tab-content\">\n    "
+    + ((stack1 = container.invokePartial(partials.__module___app_info_html,depth0,{"name":"__module___app_info_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    "
+    + ((stack1 = container.invokePartial(partials.__module___styles_html,depth0,{"name":"__module___styles_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    "
+    + ((stack1 = container.invokePartial(partials.__module___legal_html,depth0,{"name":"__module___legal_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    "
+    + ((stack1 = container.invokePartial(partials.__module___support_html,depth0,{"name":"__module___support_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "  </div>\n\n</form>\n";
+},"usePartial":true,"useData":true}, Handlebars);
+  var partials = {"__module___app_info_html": __module___app_info_html,"__module___styles_html": __module___styles_html,"__module___legal_html": __module___legal_html,"__module___support_html": __module___support_html};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

@@ -1,0 +1,16 @@
+skit.define("public.login.Login:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div id=\"content-header\" class=\"row\">\n  <div class=\"col-md-12\">\n    <h1>Login</h1>\n    <p><small>Do not have an account? <a href=\""
+    + alias4(((helper = (helper = helpers.signupUrl || (depth0 != null ? depth0.signupUrl : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"signupUrl","hash":{},"data":data}) : helper)))
+    + "\">Register now.</a></small></p>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <form class=\"form\">\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-envelope\"></i></span>\n          <input class=\"form-control\" maxlength=\"255\" name=\"email\"\n                 placeholder=\"Email\" required type=\"email\" value=\""
+    + alias4(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data}) : helper)))
+    + "\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <div class=\"input-group\">\n          <span class=\"input-group-addon\"><i class=\"fa fa-lock\"></i></span>\n          <input class=\"form-control\" name=\"password\"\n                 placeholder=\"Password\" required pattern=\".{6,}\" type=\"password\">\n        </div>\n      </div>\n      <div class=\"form-group text-center\">\n        <small><a href=\"/account/reset/\">Forgot Password?</a></small>\n      </div>\n      <div class=\"form-group\">\n        <button class=\"btn btn-primary btn-block\" type=\"submit\">Sign In</button>\n      </div>\n\n      <div class=\"form-group text-center\">\n        <small>\n          By continuing, you agree to our\n          <a href=\"/terms/\">Terms of Use</a> and\n          <a href=\"/privacy/\">Privacy Policy</a>.\n        </small>\n      </div>\n    </form>\n  </div>\n</div>";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

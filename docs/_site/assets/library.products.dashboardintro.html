@@ -1,0 +1,24 @@
+skit.define("library.products.dashboardintro:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "<div id=\"content-header\" class=\"row narrow-header\">\n  <div class=\"col-sm-12\">\n    <h1>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.name : stack1), depth0))
+    + "</h1>\n    <p><strong>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</strong></p>\n    <p>\n      "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.description : stack1), depth0))
+    + "\n      <a href=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.path : stack1), depth0))
+    + "\">Learn More.</a>\n    </p>\n\n    <a href=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.path : stack1), depth0))
+    + "/onboard/\" class=\"btn btn-primary\">Get Started</a>\n  </div>\n</div>\n\n<div class=\"row lower-hero-image-container\">\n  <div class=\"col-sm-12\">\n    <img src=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.product : depth0)) != null ? stack1.imagePath : stack1), depth0))
+    + "\">\n  </div>\n</div>\n";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

@@ -1,0 +1,26 @@
+skit.define("public.websites.dashboard.WebsitesDashboard:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "    <div class=\"col-sm-4\">\n      <div class=\"white-container\">\n        <div class=\"website-preview\">\n          <iframe data-website-id=\""
+    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\"></iframe>\n        </div>\n        <div class=\"button-footer\">\n          <a class=\"btn btn-xs btn-link\" href=\"/websites/dashboard/"
+    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "/public/\" target=\"_blank\">\n            <i class=\"fa fa-desktop\"></i>\n            Preview\n          </a>\n          <a class=\"btn btn-xs btn-primary\" href=\"/websites/dashboard/"
+    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "/edit/\">\n            <i class=\"fa fa-edit\"></i>\n            Edit\n          </a>\n        </div>\n      </div>\n    </div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "    <div class=\"col-sm-12\">\n      <div class=\"empty-state\">\n        <p>You haven't created any websites yet! Click below to create your first.</p>\n        <p><a href=\"/websites/onboard/\" class=\"btn btn-primary\">Create Website</a></p>\n      </div>\n    </div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div id=\"content-header\" class=\"row\">\n  <div class=\"col-sm-12\">\n    <a class=\"btn btn-sm btn-primary\" href=\"/websites/onboard/\"><i class=\"fa fa-plus\"></i> <span>Create New Website</span></a>\n    <h1>App Websites</h1>\n  </div>\n</div>\n\n\n<div class=\"website-list row\">\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.websites : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + "</div>\n";
+},"useData":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

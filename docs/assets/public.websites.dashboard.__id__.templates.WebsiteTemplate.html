@@ -1,0 +1,52 @@
+skit.define("public.websites.dashboard.__id__.templates.WebsiteTemplate:html", ["skit.thirdparty.handlebars:runtime"], function() {  return ((function(Handlebars) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "    <div class=\"col-sm-12\">\n      <h1>Choose Website Template</h1>\n      <p><strong>This is a preview.</strong> If something doesn't look right, dont worry, you'll adjust styles and content in the next step.</p>\n    </div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "    <div class=\"col-md-12\">\n      <a href=\"/websites/dashboard/"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.id : stack1), depth0))
+    + "/edit/\" class=\"extended-back-link\"><i class=\"fa fa-chevron-left\"></i>Back to "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.appName : stack1), depth0))
+    + " Settings</a>\n    </div>\n    <div class=\"col-sm-12\">\n      <h1>Change Website Template</h1>\n      <p class=\"header-subtext\">You can change the template at any time. Changes will be instantly visible to website visitors.</p>\n    </div>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "  <div class=\"row\">\n    <div class=\"col-sm-12\">\n      <div id=\"palette-holder\" class=\"white-container\">\n        <span>Choose a Primary Color:</span>\n      </div>\n    </div>\n  </div>\n";
+},"7":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
+
+  return "    <div class=\"col-sm-4\">\n      <div class=\"white-container\">\n        <div class=\"website-preview\">\n          <iframe scrolling=\"no\" data-template-id=\""
+    + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\"></iframe>\n        </div>\n        <div class=\"button-footer\">\n          <a href=\""
+    + alias3((helpers.previewLink || (depth0 && depth0.previewLink) || alias2).call(alias1,((stack1 = (depths[1] != null ? depths[1].website : depths[1])) != null ? stack1.id : stack1),(depth0 != null ? depth0.id : depth0),{"name":"previewLink","hash":{},"data":data}))
+    + "\" class=\"btn btn-sm btn-link\" target=\"_blank\">\n            <i class=\"fa fa-desktop\"></i> Preview\n          </a>\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depths[1] != null ? depths[1].website : depths[1])) != null ? stack1.template : stack1),(depth0 != null ? depth0.id : depth0),{"name":"ifEqual","hash":{},"fn":container.program(8, data, 0, blockParams, depths),"inverse":container.program(10, data, 0, blockParams, depths),"data":data})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n    </div>\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "            <a class=\"btn btn-sm btn-success\" disabled=\"disabled\">\n              <i class=\"fa fa-check\"></i> Active\n            </a>\n";
+},"10":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+
+  return "            <a class=\"btn btn-sm btn-primary\" data-action=\"choose\" data-template=\""
+    + container.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
+    + "\">Choose"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depths[2] != null ? depths[2].website : depths[2])) != null ? stack1.id : stack1),"example",{"name":"ifEqual","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</a>\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    return " and Customize";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div id=\"content-header\" class=\"row\">\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isExample : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.program(3, data, 0, blockParams, depths),"data":data})) != null ? stack1 : "")
+    + "</div>\n\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.isExample : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n<div class=\"website-list row\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.templates : depth0),{"name":"each","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\n\n";
+},"useData":true,"useDepths":true}, Handlebars);
+  var partials = {};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});

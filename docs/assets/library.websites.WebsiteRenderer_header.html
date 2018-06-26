@@ -1,0 +1,195 @@
+skit.define("library.websites.WebsiteRenderer:header.html", ["skit.thirdparty.handlebars:runtime","library.websites.WebsiteRenderer:nav.html","library.websites.WebsiteRenderer:carousel.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:carousel.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges_white.html","library.websites.WebsiteRenderer:carousel.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges_white.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:carousel.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges.html","library.websites.WebsiteRenderer:carousel.html","library.websites.WebsiteRenderer:app_logo.html","library.websites.WebsiteRenderer:download_badges_white.html"], function() {  return ((function(Handlebars,__module___nav_html,__module___carousel_html,__module___app_logo_html,__module___download_badges_html,__module___app_logo_html,__module___download_badges_html,__module___carousel_html,__module___app_logo_html,__module___download_badges_html,__module___app_logo_html,__module___download_badges_html,__module___app_logo_html,__module___download_badges_html,__module___app_logo_html,__module___download_badges_html,__module___app_logo_html,__module___download_badges_white_html,__module___carousel_html,__module___app_logo_html,__module___download_badges_white_html,__module___app_logo_html,__module___download_badges_html,__module___carousel_html,__module___app_logo_html,__module___download_badges_html,__module___carousel_html,__module___app_logo_html,__module___download_badges_white_html) {
+  var template = Handlebars.VM.template({"1":function(container,depth0,helpers,partials,data) {
+    return "    <div class=\"blurred-cover\">\n      <div class=\"darken\"></div>\n    </div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "    <div class=\"bottom-shadow\"></div>\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "      <div class=\"row\">\n        <div class=\"col-sm-5 col-xs-12 text-center\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "        </div>\n        <div class=\"col-sm-7 col-xs-12\">\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.shortDescription : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
+    + "          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            "
+    + ((stack1 = container.invokePartial(partials.__module___carousel_html,depth0,{"name":"__module___carousel_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+},"8":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            "
+    + container.escapeExpression((helpers.frameByDevice || (depth0 && depth0.frameByDevice) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"",((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.frameScreenshots : stack1),{"name":"frameByDevice","hash":{},"data":data}))
+    + "\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <p>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.shortDescription : stack1), depth0))
+    + "</p>\n";
+},"12":function(container,depth0,helpers,partials,data) {
+    return "            <p>Donec imperdiet scelerisque pretium. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean a rutrum risus, et condimentum odio.</p>\n";
+},"14":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "      <div class=\"row\">\n        <div class=\"col-sm-5 col-xs-12 text-center\">\n          <img src=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\">\n        </div>\n        <div class=\"col-sm-7 col-xs-12\">\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"16":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "      <div class=\"row\">\n        <div class=\"hero-text-container col-sm-6 col-xs-12\">\n          <img src=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\">\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n        <div class=\"hero-graphic-container col-sm-6 col-xs-12 text-center\">\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"17":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            "
+    + container.escapeExpression((helpers.frameByDevice || (depth0 && depth0.frameByDevice) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1)) != null ? stack1["0"] : stack1)) != null ? stack1.url : stack1),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.frameScreenshots : stack1),{"name":"frameByDevice","hash":{},"data":data}))
+    + "\n";
+},"19":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      <div class=\"row\">\n        <div class=\"col-xs-12\">\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"20":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "            <img src=\""
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\">\n";
+},"22":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "      <div class=\"row headernav\">\n        <div class=\"col-sm-12\">\n          <img src=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\"> <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-sm-7 col-xs-12\">\n          <h2>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.shortDescription : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
+    + "          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_white_html,depth0,{"name":"__module___download_badges_white_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n        <div class=\"col-sm-5 col-xs-12 text-center\">\n"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"24":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      <div class=\"row\">\n        <div class=\"col-xs-12\">\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_white_html,depth0,{"name":"__module___download_badges_white_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"26":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "      <div class=\"row headernav\">\n        <div class=\"col-sm-12\">\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n        </div>\n      </div>\n      <hr>\n      <div class=\"row hero-main-content\">\n        <div class=\"hero-text-container col-sm-7 col-xs-12\">\n          <h2>"
+    + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n"
+    + ((stack1 = helpers["if"].call(alias2,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.shortDescription : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
+    + "          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n        <div class=\"hero-graphic-container col-sm-5 col-xs-12 text-center\">\n          "
+    + alias1((helpers.frameByDevice || (depth0 && depth0.frameByDevice) || helpers.helperMissing).call(alias2,((stack1 = ((stack1 = ((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1)) != null ? stack1["0"] : stack1)) != null ? stack1.url : stack1),((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.frameScreenshots : stack1),{"name":"frameByDevice","hash":{},"data":data}))
+    + "\n        </div>\n      </div>\n";
+},"28":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "      <div class=\"row text-center\">\n        <div class=\"graphic\">\n          <div>\n"
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "          </div>\n        </div>\n        <div>\n          <div>\n          <img src=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.icon : stack1)) != null ? stack1.url : stack1), depth0))
+    + "\" class=\"app-icon img-rounded\">\n\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_html,depth0,{"name":"__module___download_badges_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "          </div>\n        </div>\n      </div>\n";
+},"30":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "      <div class=\"row bg-color\"></div>\n      <div class=\"row content\">\n        <div class=\"text-center graphic\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.images : stack1)) != null ? stack1.screenshots : stack1)) != null ? stack1.iPhone : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
+    + "        </div>\n        <div class=\"text\">\n          <h1>"
+    + ((stack1 = container.invokePartial(partials.__module___app_logo_html,depth0,{"name":"__module___app_logo_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "</h1>\n          <h2>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.tagline : stack1), depth0))
+    + "</h2>\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.website : depth0)) != null ? stack1.shortDescription : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(12, data, 0),"data":data})) != null ? stack1 : "")
+    + "          "
+    + ((stack1 = container.invokePartial(partials.__module___download_badges_white_html,depth0,{"name":"__module___download_badges_white_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "        </div>\n      </div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+
+  return "<section class=\"hero\">\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.blurredCover : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.bottomShadow : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "  <div class=\"container\">\n    "
+    + ((stack1 = container.invokePartial(partials.__module___nav_html,depth0,{"name":"__module___nav_html","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"1",{"name":"ifEqual","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"2",{"name":"ifEqual","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"1color",{"name":"ifEqual","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"2color",{"name":"ifEqual","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"3",{"name":"ifEqual","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"4",{"name":"ifEqual","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"5",{"name":"ifEqual","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"6",{"name":"ifEqual","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"7",{"name":"ifEqual","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"8",{"name":"ifEqual","hash":{},"fn":container.program(28, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = (helpers.ifEqual || (depth0 && depth0.ifEqual) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.template : depth0)) != null ? stack1.id : stack1),"9",{"name":"ifEqual","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n  </div>\n</section>\n";
+},"usePartial":true,"useData":true}, Handlebars);
+  var partials = {"__module___nav_html": __module___nav_html,"__module___carousel_html": __module___carousel_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___carousel_html": __module___carousel_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_white_html": __module___download_badges_white_html,"__module___carousel_html": __module___carousel_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_white_html": __module___download_badges_white_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___carousel_html": __module___carousel_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_html": __module___download_badges_html,"__module___carousel_html": __module___carousel_html,"__module___app_logo_html": __module___app_logo_html,"__module___download_badges_white_html": __module___download_badges_white_html};  return function(context, opt_options) {
+    var options = opt_options || {};
+    options.partials = partials;
+    return template(context, options);
+  }
+})).apply(this, arguments)});
