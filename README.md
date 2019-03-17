@@ -1,6 +1,6 @@
 # Clicker Desktop
 
-[<img src="docs/assets/windows-download.png" alt="Clicker Desktop for Windows" width="127" height="39">](https://github.com/victorkifer/clicker/releases/download/v1.5/ClickerDesktop-1.5-Windows32.zip)
+[<img src="docs/assets/windows-download.png" alt="Clicker Desktop for Windows" width="127" height="39">](https://github.com/victorkifer/clicker/releases/download/v1.5/ClickerDesktop-1.5-Win32.zip)
 
 [<img src="docs/assets/mac-download.png" alt="Clicker Desktop for Mac" width="127" height="39">](https://github.com/victorkifer/clicker/releases/download/v1.5/ClickerDesktop-1.5-Mac.dmg)
 
