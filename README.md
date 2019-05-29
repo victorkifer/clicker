@@ -9,3 +9,5 @@
 # Clicker Mobile
 
 [![Clicker on Play Store](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.vksolutions.presentationremotecontrol&utm_source=github)
+
+[![Clicker on App Store](images/app-store-badge.png)](https://itunes.apple.com/ua/app/clicker-presentation-remote/id1463878246)
