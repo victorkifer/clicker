@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="26px" viewBox="0 0 94 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>windows-x32-download</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="windows-x32-download">
+            <rect id="Rectangle" fill="#000000" opacity="0.948822464" x="0" y="0" width="94" height="26" rx="2"></rect>
+            <text id="DOWNLOAD-FOR" font-family="Helvetica" font-size="4" font-weight="normal" fill="#FFFFFF">
+                <tspan x="25" y="9">DOWNLOAD FOR</tspan>
+            </text>
+            <text id="Windows-x32" font-family="Helvetica-Bold, Helvetica" font-size="10" font-weight="bold" fill="#FFFFFF">
+                <tspan x="25" y="20">Windows x32</tspan>
+            </text>
+            <g id="microsoft-logo" transform="translate(5.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M0,2.06784162 L6.19628906,1.22042492 L6.19628906,7.1740705 L0,7.1740705 L0,2.06784162 Z M0,7.8259295 L6.22558594,7.8259295 L6.22558594,13.7288749 L3.20068359,13.2943023 L0,12.8561082 L0,7.8259295 Z M15,7.15958474 L6.90307617,7.15958474 L6.90307617,1.11540319 L14.9963379,0 L15,7.15958474 Z M15,7.86214389 L15,15 L6.89208984,13.8302752 L6.89208984,7.86214389 L15,7.86214389 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
