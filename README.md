@@ -8,4 +8,4 @@
 # Clicker Mobile
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg"/>](https://play.google.com/store/apps/details?id=com.vksolutions.presentationremotecontrol&utm_source=github)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"/>](https://itunes.apple.com/ua/app/clicker-presentation-remote/id1463878246)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"/>](https://itunes.apple.com/app/clicker-presentation-remote/id1463878246)
