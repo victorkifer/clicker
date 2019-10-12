@@ -7,5 +7,5 @@
 
 # Clicker Mobile
 
-[<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg" width="135" height="40"/>](https://play.google.com/store/apps/details?id=com.vksolutions.presentationremotecontrol&utm_source=github)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="135" height="40"/>](https://play.google.com/store/apps/details?id=com.vksolutions.presentationremotecontrol&utm_source=github&utm_campaign=clicker-repo&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" width="135" height="40"/>](https://itunes.apple.com/app/clicker-presentation-remote/id1463878246)
