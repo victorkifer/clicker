@@ -1,7 +1,7 @@
 # Clicker Desktop
 
-[<img src="images/windows-x64-download.svg" alt="Clicker Desktop for Windows x64" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Windows64.zip)
-[<img src="images/windows-x32-download.svg" alt="Clicker Desktop for Windows x32" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Windows32.zip)
+[<img src="images/windows-x64-download.svg" alt="Clicker Desktop for Windows x64" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Windows64.exe)
+[<img src="images/windows-x32-download.svg" alt="Clicker Desktop for Windows x32" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Windows32.exe)
 [<img src="images/mac-x64-download.svg" alt="Clicker Desktop for Mac" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Mac64.dmg)
 [<img src="images/linux-x64-download.svg" alt="Clicker Desktop for Linux x64" width="128" height="35"/>](https://github.com/victorkifer/clicker/releases/latest/download/ClickerDesktop-Linux64.tar.gz)
 
